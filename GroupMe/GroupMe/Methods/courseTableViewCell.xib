@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="84" id="KGk-i7-Jjw" customClass="courseTableViewCell" customModule="GroupMe" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="351" height="84"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="351" height="84"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ECS 189E" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Hu-wW-jpy">
+                        <rect key="frame" x="45" y="10" width="91" height="24"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dsa-fv-hGk">
+                        <rect key="frame" x="45" y="47" width="95" height="21"/>
+                        <string key="text" base64-UTF8="YES">
+CFNhbXVlbCBLaW5nA
+</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="classIcon" translatesAutoresizingMaskIntoConstraints="NO" id="1t6-Zj-Mjj">
+                        <rect key="frame" x="10" y="10" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="1Xp-se-L51"/>
+                            <constraint firstAttribute="width" constant="25" id="B8r-o5-qjj"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Instructor Icon" translatesAutoresizingMaskIntoConstraints="NO" id="iF0-Le-ter">
+                        <rect key="frame" x="10" y="45" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="I2s-3n-bnm"/>
+                            <constraint firstAttribute="width" constant="25" id="NfA-Qi-zw7"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="moK-mo-m2Y">
+                        <rect key="frame" x="301" y="22" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="0Zp-gA-YRg"/>
+                            <constraint firstAttribute="width" constant="40" id="B5E-La-pol"/>
+                        </constraints>
+                        <state key="normal" image="uncheckbox"/>
+                        <connections>
+                            <action selector="uncheckTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="iA1-GJ-yWy"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C49-rt-Ij9">
+                        <rect key="frame" x="301" y="22" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="EYp-SU-nXl"/>
+                            <constraint firstAttribute="width" constant="40" id="oXX-Ns-FUh"/>
+                        </constraints>
+                        <state key="normal" image="checkbox"/>
+                        <connections>
+                            <action selector="checkTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="cXx-oi-7dh"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="iF0-Le-ter" firstAttribute="top" secondItem="1t6-Zj-Mjj" secondAttribute="bottom" constant="10" id="0f4-pJ-wj2"/>
+                    <constraint firstItem="iF0-Le-ter" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="FHB-v2-d0R"/>
+                    <constraint firstItem="moK-mo-m2Y" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="G0d-Ow-qaj"/>
+                    <constraint firstItem="C49-rt-Ij9" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="JNK-AS-t3I"/>
+                    <constraint firstItem="3Hu-wW-jpy" firstAttribute="leading" secondItem="1t6-Zj-Mjj" secondAttribute="trailing" constant="10" id="OuF-Lz-FLp"/>
+                    <constraint firstAttribute="trailing" secondItem="C49-rt-Ij9" secondAttribute="trailing" constant="10" id="auj-70-nwt"/>
+                    <constraint firstItem="1t6-Zj-Mjj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="f0f-Hi-nbm"/>
+                    <constraint firstItem="1t6-Zj-Mjj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="hQG-rc-bq0"/>
+                    <constraint firstAttribute="trailing" secondItem="moK-mo-m2Y" secondAttribute="trailing" constant="10" id="i9t-n7-PvH"/>
+                    <constraint firstItem="3Hu-wW-jpy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="jGT-8q-hXM"/>
+                    <constraint firstItem="dsa-fv-hGk" firstAttribute="top" secondItem="3Hu-wW-jpy" secondAttribute="bottom" constant="13" id="pUf-75-nGW"/>
+                    <constraint firstItem="dsa-fv-hGk" firstAttribute="leading" secondItem="iF0-Le-ter" secondAttribute="trailing" constant="10" id="sez-Zg-g9H"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="checkButton" destination="C49-rt-Ij9" id="3Xk-6e-qyT"/>
+                <outlet property="classNameLabel" destination="3Hu-wW-jpy" id="wpf-Eh-MAZ"/>
+                <outlet property="instructorLabel" destination="dsa-fv-hGk" id="ZdG-EJ-kXz"/>
+                <outlet property="uncheckButton" destination="moK-mo-m2Y" id="zzb-jj-hFT"/>
+            </connections>
+            <point key="canvasLocation" x="161.59420289855075" y="83.705357142857139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Instructor Icon" width="170" height="170"/>
+        <image name="checkbox" width="100" height="100"/>
+        <image name="classIcon" width="164" height="164"/>
+        <image name="uncheckbox" width="100" height="100"/>
+    </resources>
+</document>
